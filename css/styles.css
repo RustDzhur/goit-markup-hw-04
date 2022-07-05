@@ -205,6 +205,7 @@ img {
 
 .footer-content-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -243,13 +244,12 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-social-icons {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .footer-social-icon-link {
@@ -300,6 +300,10 @@ img {
     margin-right: auto;
     margin-left: auto;
     background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .hero-title {
@@ -338,52 +342,71 @@ img {
     margin-right: 30px;
 }
 
-.antena::before {
-    content: '';
-    background: url(../images/svg/antenna.svg) #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.antenna-svg {
+    background-color: #F5F4FA;
     height: 120px;
     display: block;
     margin-bottom: 30px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.clock::before {
-    content: '';
-    background: url(../images/svg/clock.svg) #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 120px;
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 4px;
+.icon-antenna {
+    width: 70px;
+    height: 70px;
 }
 
-.diagram::before {
-    content: '';
-    background: url(../images/svg/diagram.svg) #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.clock-svg {
+    background-color: #F5F4FA;
     height: 120px;
     display: block;
     margin-bottom: 30px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.astronaut::before {
-    content: '';
-    background: url(../images/svg/astronaut.svg) #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.icon-clock {
+    width: 70px;
+    height: 70px;
+}
+
+.diagram-svg {
+    background-color: #F5F4FA;
     height: 120px;
     display: block;
     margin-bottom: 30px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-diagram {
+    width: 70px;
+    height: 70px;
+}
+
+.astronaut-svg {
+    background-color: #F5F4FA;
+    height: 120px;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-astronaut {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-advantages:last-child {
@@ -478,12 +501,12 @@ img {
     letter-spacing: 0.03em;
     color: var(--team-position-color);
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .team-social-icons {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .team-social-icon-link {
@@ -553,7 +576,6 @@ img {
     width: 170px;
     height: 92px;
     color: #AFB1B8;
-    background: #E5E5E5;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: inline-flex;
@@ -627,9 +649,10 @@ img {
     margin-bottom: 30px;
 }
 
-.cards-item:hover,
-.cards-item:focus {
+.card-link:hover,
+.card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    display: block;
 }
 
 .card-item-content {
