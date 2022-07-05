@@ -325,6 +325,8 @@ img {
     color: var(--hero-button-text-color);
     border: none;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 /*----------Страница index.html. Main. Section "advantages"----------*/
 .list-advantages {
